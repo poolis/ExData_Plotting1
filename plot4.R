@@ -17,7 +17,7 @@ lines(strptime(paste(twoDaysData$Date, " ", twoDaysData$Time),
 # Plot 2
 plot(strptime(paste(twoDaysData$Date, " ", twoDaysData$Time), 
               format = "%d/%m/%Y %H:%M:%S"), 
-     twoDaysData$Voltage, type = "n", main = "", xlab = "", ylab = "Voltage", 
+     twoDaysData$Voltage, type = "n", main = "", xlab = "datetime", ylab = "Voltage", 
      cex.lab = 0.65, cex.axis = 0.65)
 lines(strptime(paste(twoDaysData$Date, " ", twoDaysData$Time), 
                format = "%d/%m/%Y %H:%M:%S"), twoDaysData$Voltage)
@@ -38,7 +38,7 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
 # Plot 4
 plot(strptime(paste(twoDaysData$Date, " ", twoDaysData$Time), 
               format = "%d/%m/%Y %H:%M:%S"), 
-     twoDaysData$Global_reactive_power, type = "n", main = "", xlab = "", 
+     twoDaysData$Global_reactive_power, type = "n", main = "", xlab = "datetime", 
      ylab = "Global_reactive_power", cex.lab = 0.65, cex.axis = 0.65)
 lines(strptime(paste(twoDaysData$Date, " ", twoDaysData$Time), 
                format = "%d/%m/%Y %H:%M:%S"), twoDaysData$Global_reactive_power)
